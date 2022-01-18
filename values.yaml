@@ -1,11 +1,13 @@
-service:
-  image:
-    custom:
-      enabled: true
-      version: avouacr/learnr-sparkr:latest
+rstudio:
+  service:
+    image:
+      custom:
+        enabled: true
+        version: avouacr/learnr-sparkr:latest
 
-spark:
-  sparkui: true
+  spark:
+    sparkui: true
 
-ingress:
-  hostname: learnr-sparkr.lab.sspcloud.fr
+  ingress:
+    hostname: learnr-sparkr.lab.sspcloud.fr
+    sparkHostname: learnr-sparkr-ui.lab.sspcloud.fr
