@@ -1,0 +1,11 @@
+service:
+  image:
+    custom:
+      enabled: true
+      version: avouacr/learnr-sparkr:latest
+
+spark:
+  sparkui: true
+
+ingress:
+  hostname: learnr-sparkr.lab.sspcloud.fr
