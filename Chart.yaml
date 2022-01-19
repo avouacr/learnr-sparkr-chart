@@ -3,6 +3,6 @@ name: learnr-spark
 version: 0.0.1
 dependencies:
   - name: rstudio
-    version: 6.0.3
-    repository: https://inseefrlab.github.io/helm-charts-datascience
+    version: 6.1.1
+    repository: "file://../helm-charts-datascience/charts/rstudio"
     enabled: true
