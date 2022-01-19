@@ -1,9 +1,8 @@
 rstudio:
   service:
     image:
-      custom:
-        enabled: true
-        version: avouacr/learnr-sparkr:latest
+      command: ["/bin/sh"]
+      args: ["-c", "/data/onyxia-init.sh sleep 100000"]
 
   spark:
     sparkui: true
